@@ -4,9 +4,6 @@ const Experience = () => {
   return (
     <section id="experience">
       <h2>Experience</h2>
-        <div className="download-resume">
-            <a href="https://docs.google.com/document/d/1aTn2UgOyVpR1acOiXIxfiVqIVzAqHQlkk58bYZO6f-Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-        </div>
       <div>
         <h3>Charm Industrial</h3>
         <h4>San Francisco, CA</h4>
@@ -33,7 +30,7 @@ const Experience = () => {
       </div>
       <div>
         <h3>Charisma Robotics Lab</h3>
-        <h4>Corvallis, OR</h4>
+        <h4>Oregon State University</h4>
         <div className="experience-details">
           <p className="experience-title">Undergraduate Researcher</p>
           <p className="experience-date">December 2020 – June 2021</p>
@@ -56,7 +53,7 @@ const Experience = () => {
       </div>
       <div>
         <h3>Human Computer Interaction Group</h3>
-        <h4>Stanford, CA</h4>
+        <h4>Stanford University</h4>
         <div className="experience-details">
           <p className="experience-title">Research Intern</p>
           <p className="experience-date">June 2018 – August 2018</p>

@@ -41,7 +41,7 @@ h3 {
 h4 {
   font-size: 1.1rem;
   line-height: 1.4;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.2rem;
 }
 
 
@@ -168,6 +168,7 @@ section#projects div a:hover {
 
 /* Skills styles */
 section#skills {
+  text-align: center;
   padding: 2rem 0;
 }
 
@@ -180,6 +181,8 @@ section#skills ul {
 }
 
 section#skills li {
+  display: flex;
+  align-items: center;
   background-color: #f9f9f9;
   padding: 1.5rem;
   color: #555;
@@ -192,6 +195,33 @@ section#skills li:hover {
   transform: translateY(-5px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+section#skills li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.resume-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #222;
+}
+
 
 /* Experience styles */
 section#experience {
@@ -236,13 +266,6 @@ section#experience div .experience-date {
   color: #777;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-section#experience div .download-resume {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Add this line to vertically center the button */
-  margin-bottom: 2rem; /* Add margin-bottom for spacing */
 }
 
 section#experience div a {
