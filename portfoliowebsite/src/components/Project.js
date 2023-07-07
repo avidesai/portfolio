@@ -1,21 +1,37 @@
 import React from 'react';
+import butter from '../images/butter.png';
+import adgenius from '../images/adgenius.png';
 
 const Project = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
       <div>
-        <div>
-          <h3>Project 1</h3>
-          <p>A description of project 1.</p>
-          <a href="https://github.com/your-username/project1" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://project1-demo.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <div className="project-card">
+          <div className="project-image">
+            <img src={butter} alt="Project 1" />
+          </div>
+          <div className="project-details">
+            <h3>butter.</h3>
+            <p>A betting app for socially trending events</p>
+            <div className="project-links">
+              <a href="https://github.com/avidesai/butterV2" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://avidesai.github.io/butterV2/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>Project 2</h3>
-          <p>A description of project 2.</p>
-          <a href="https://github.com/your-username/project2" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://project2-demo.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <div className="project-card">
+          <div className="project-image">
+            <img src={adgenius} alt="Project 2" />
+          </div>
+          <div className="project-details">
+            <h3>AdGenius</h3>
+            <p>AI powered social media marketing agent</p>
+            <div className="project-links">
+              <a href="https://github.com/avidesai/AI-Marketing" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://avidesai.github.io/AI-Marketing/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

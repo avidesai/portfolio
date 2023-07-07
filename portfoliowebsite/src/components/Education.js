@@ -12,8 +12,8 @@ const Education = () => {
       <div>
         <h3>Online Courses and Certifications</h3>
         <ul>
-          <li>React - Udemy</li>
-          <li>Node.js - Coursera</li>
+          <li>Machine Learning</li>
+          <li>Data Engineering</li>
         </ul>
       </div>
     </section>

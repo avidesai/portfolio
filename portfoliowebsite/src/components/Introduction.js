@@ -5,7 +5,8 @@ const Introduction = () => {
     <section id="about">
       <h1>Avi Desai</h1>
       <p>
-        I am a passionate software developer with a strong background in computer science. I enjoy working on challenging projects and leveraging my skills in various technologies to create innovative solutions. Currently pursuing a Bachelor's degree in Computer Science at Oregon State University, I am eager to contribute to the tech industry with my expertise.
+        &#128075; Hello! 
+        I am a passionate software developer with a strong interest in machine learning and intelligent systems. I enjoy working on challenging projects and leveraging my skills in various technologies to solve problems. Let's build something exceptional together!
       </p>
     </section>
   );
