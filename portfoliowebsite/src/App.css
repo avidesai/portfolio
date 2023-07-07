@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.5rem;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
+
 }
 
 h2 {
@@ -47,7 +47,7 @@ h4 {
 
 /* Header styles */
 header {
-  background-color: rgb(0, 92, 230);
+  background-color: rgb(25, 106, 227);
   padding: 1rem;
 }
 
@@ -91,6 +91,9 @@ section#about p {
 section#projects {
   padding: 2rem 0;
 }
+section#projects h2 {
+  padding-bottom: 25px;
+}
 
 section#projects div {
   display: flex;
@@ -101,7 +104,7 @@ section#projects div {
 
 .project-card {
   background-color: #fff;
-  padding: 2rem;
+  padding: 1.2rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -132,13 +135,13 @@ section#projects div {
 }
 
 section#projects div .project-details {
-  margin-top: 0.1rem;
+  margin-top: 0rem;
 }
 
 section#projects div h3 {
   font-size: 1.5rem;
   color: #333;
-  margin-bottom: 0.1rem; /* Reduce the margin-bottom value for less space */
+  margin-bottom: 0; /* Reduce the margin-bottom value for less space */
 }
 
 section#projects div p {
@@ -178,17 +181,20 @@ section#skills ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+
 }
 
 section#skills li {
   display: flex;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #ffffffca;
   padding: 1.5rem;
   color: #555;
   border-radius: 4px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 0;
 }
 
 section#skills li:hover {
@@ -224,11 +230,55 @@ section#skills li img {
 
 
 /* Experience styles */
+/* Experience styles */
 section#experience {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  margin-bottom: 2rem;
   padding: 2rem 0;
 }
 
-section#experience div {
+.timeline-item {
+  position: relative;
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.timeline-image {
+  width: 90px;
+  height: 90px;
+  object-fit: scale-down;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+
+}
+
+.timeline-item.active .timeline-image {
+  width: 80px;
+  height: 80px;
+ 
+}
+
+.timeline-item:hover .timeline-image {
+  transform: scale(1.2);
+}
+
+.experience-card {
+  display: none;
   background-color: #fff;
   padding: 1.8rem;
   border-radius: 8px;
@@ -236,52 +286,54 @@ section#experience div {
   max-width: 800px;
   margin: 0 auto 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
 }
 
-section#experience div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.experience-card.active {
+  display: block;
 }
 
-section#experience div h3 {
+.experience-card h3 {
   font-size: 1.5rem;
   color: #333;
 }
 
-section#experience div .experience-details {
+.experience-card h4 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.experience-details {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 0.5rem;
+  margin-left: 40px;
+  margin-right: 35px;
+  margin-bottom: 0.5rem;
 }
 
-section#experience div .experience-title {
-  font-size: 1.3rem;
+.experience-title {
+  font-size: 1.2rem;
   color: #555;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
-section#experience div .experience-date {
-  font-size: 1.1rem;
+.experience-date {
+  font-size: 1.2rem;
   color: #777;
-  margin-top: 0.5rem;
+}
+
+.experience-card ul {
+  list-style-type: none;
+  margin-left: 0;
+  color: #555;
+}
+
+.experience-card li {
   margin-bottom: 0.5rem;
 }
 
-section#experience div a {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 2rem;
-  margin-right: 1rem;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
 
-section#experience div a:hover {
-  background-color: #222;
-}
 /* Education styles */
 section#education {
   padding: 2rem 0;
@@ -354,11 +406,16 @@ section#contact div .contact-icons {
 section#contact div .contact-icons img {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease;
+}
+
+section#contact div .contact-icons img:hover {
+  transform: scale(1.2);
 }
 
 
 footer {
-  background-color: rgb(0, 92, 230);
+  background-color: rgb(25, 106, 227);
   color: #fff;
   padding: 1rem;
   text-align: center;
