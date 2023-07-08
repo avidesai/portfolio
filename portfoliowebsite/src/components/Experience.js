@@ -72,7 +72,7 @@ const Experience = () => {
       position: 'Software Engineering Intern',
       date: 'June 2022 – September 2022',
       description: [
-        'Improved the usability and safety of a Python GUI used to operate Charm’s biomass reactors, resulting in a 20% increase in operator efficiency.',
+        'Improved the usability and safety of a Python interface used to operate Charm’s biomass reactors, resulting in a 20% increase in operator efficiency.',
         'Designed and tested a version control test suite to ensure consistency and viability of internal software updates, reducing potential errors by 15%.',
       ],
       image: charm,

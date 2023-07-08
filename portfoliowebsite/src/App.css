@@ -1,9 +1,11 @@
 /* Global styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -14,7 +16,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: #333;
   text-align: center;
@@ -91,6 +93,7 @@ section#about p {
 section#projects {
   padding: 2rem 0;
 }
+
 section#projects h2 {
   padding-bottom: 25px;
 }
@@ -132,30 +135,33 @@ section#projects div {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-bottom: -10px;
 }
 
-section#projects div .project-details {
-  margin-top: 0rem;
+.project-details {
+  margin-top: 0rem; /* Adjust the margin-top value to increase or decrease spacing */
 }
 
-section#projects div h3 {
+.project-details h3 {
   font-size: 1.5rem;
   color: #333;
-  margin-bottom: 0; /* Reduce the margin-bottom value for less space */
+  margin-bottom: 0rem; /* Increase or decrease margin-bottom as desired */
 }
 
-section#projects div p {
+.project-details p {
   color: #555;
-  margin-bottom: 0.1rem;
+  margin: 0;
 }
 
-section#projects div .project-links {
+.project-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 0.5rem; /* Adjust the margin-top value to increase or decrease spacing */
+  margin-bottom: 0.7rem; /* Adjust the margin-bottom value to increase or decrease spacing */
 }
 
-section#projects div a {
+.project-links a {
   display: inline-block;
   background-color: #333;
   color: #fff;
@@ -165,9 +171,10 @@ section#projects div a {
   transition: background-color 0.3s ease;
 }
 
-section#projects div a:hover {
+.project-links a:hover {
   background-color: #222;
 }
+
 
 /* Skills styles */
 section#skills {
@@ -181,6 +188,7 @@ section#skills ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding-top: 15px;
 
 }
 
@@ -208,28 +216,7 @@ section#skills li img {
   margin-right: 1rem;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
 
-.resume-button {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.resume-button:hover {
-  background-color: #222;
-}
-
-
-/* Experience styles */
 /* Experience styles */
 section#experience {
   padding: 2rem 0;
@@ -242,20 +229,26 @@ section#experience {
   align-items: center;
   overflow-x: auto;
   margin-bottom: 2rem;
-  padding: 2rem 0;
+  padding: 1.6rem 0;
 }
 
 .timeline-item {
   position: relative;
   flex: 0 0 100px;
   height: 100px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: transform 0.3s ease;
   z-index: 1;
+  border-radius: 20%;
+}
+
+.timeline-item:hover {
+  transform: scale(1.1); /* Adjust the scaling value as desired */
 }
 
 .timeline-image {
@@ -264,14 +257,14 @@ section#experience {
   object-fit: scale-down;
   border-radius: 20%;
   transition: transform 0.3s ease;
-
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.128); /* Add the box shadow property */
 }
 
 .timeline-item.active .timeline-image {
   width: 80px;
   height: 80px;
- 
 }
+
 
 .timeline-item:hover .timeline-image {
   transform: scale(1.2);
@@ -350,6 +343,10 @@ section#education div {
   text-align: center;
 }
 
+section#education h2 {
+  margin-bottom: 1.8rem;
+}
+
 section#education div ul {
   padding: 0; /* Remove default padding */
   list-style-type: none;
@@ -380,7 +377,7 @@ section#contact {
 }
 
 section#contact div p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #555;
   margin-bottom: 1rem;
 }
@@ -404,14 +401,38 @@ section#contact div .contact-icons {
 }
 
 section#contact div .contact-icons img {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   transition: transform 0.3s ease;
 }
 
 section#contact div .contact-icons img:hover {
   transform: scale(1.2);
 }
+
+.resume-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.resume-button:hover {
+  background-color: #222;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  margin-top: 0.9rem;
+  margin-bottom: 1rem;
+}
+
 
 
 footer {
