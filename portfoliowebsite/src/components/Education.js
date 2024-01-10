@@ -8,13 +8,9 @@ const Education = () => {
         <h3>Oregon State University</h3>
         <h4>B.S. Computer Science</h4>
         <p>September 2020 - December 2023</p>
-      </div>
-      <div>
-        <h3>Online Courses and Certifications</h3>
-        <ul>
-          <li>Machine Learning</li>
-          <li>Data Engineering</li>
-        </ul>
+        <br></br>
+        <p>Human Computer Interaction focus</p>
+        <p>Cum laude distinction</p>
       </div>
     </section>
   );
