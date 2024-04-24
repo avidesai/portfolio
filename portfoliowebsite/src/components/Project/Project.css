@@ -1,88 +1,115 @@
-/* Project styles */
 section#projects {
-    padding: 2rem 0;
-  }
-  
-  section#projects h2 {
-    padding-bottom: 25px;
-  }
-  
-  section#projects div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    padding: 1.2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
+  padding: 4rem 0; /* Increased padding for better spacing */
+}
+
+section#projects h2 {
+  padding-bottom: 1rem; /* Reduced padding for a tighter header */
+  text-align: center;
+  font-size: 2rem; /* Larger font size for the section title */
+  color: #333; /* Darker color for the title for better contrast */
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 2.5rem; /* More padding for better spacing inside the card */
+  border-radius: 12px; /* Slightly larger radius for modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Smoother shadow for subtlety */
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: stretch; /* Make sure children stretch to full height */
+  overflow: hidden; /* Prevents children from overlapping the card's border-radius */
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.project-image {
+  width: 50%; 
+  border-radius: 8px 0 0 8px; /* Consistent border-radius with the card */
+  padding-right: 3rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.project-details h3 {
+  font-size: 1.75rem; /* Slightly larger font size */
+  color: #222; /* Darker color for the title for better contrast */
+  margin-bottom: 1rem; /* More space below the title */
+}
+
+.project-details p {
+  color: #555;
+  line-height: 1.6; /* Increased line height for readability */
+  margin-bottom: 1rem; /* Consistent margin for all paragraphs */
+}
+
+.project-links {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 1rem;
+  margin-top: 2rem; /* Additional space above the links */
+}
+
+.project-links a {
+  padding: 0.5rem 1.5rem; /* Larger padding for a bigger clickable area */
+  text-decoration: none;
+  border-radius: 20px; /* Rounded corners for modern button style */
+  font-weight: 500; /* Bold font for better legibility */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.project-links a:first-child {
+  background-color: #007BFF; /* Bootstrap primary blue for the first link */
+  color: #fff;
+}
+
+.project-links a:last-child {
+  background-color: #28A745; /* Bootstrap success green for the second link */
+  color: #fff;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px); /* Slight raise effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .project-content {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .project-image {
     width: 100%;
-    max-height: 300px;
-    border-radius: 8px;
-    overflow: hidden;
   }
-  
-  .project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: -10px;
-  }
-  
+
   .project-details {
-    margin-top: 0rem; /* Adjust the margin-top value to increase or decrease spacing */
+    width: 100%;
   }
-  
-  .project-details h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0rem; /* Increase or decrease margin-bottom as desired */
-  }
-  
-  .project-details p {
-    color: #555;
-    margin: 0;
-  }
-  
-  .project-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.5rem; /* Adjust the margin-top value to increase or decrease spacing */
-    margin-bottom: 0.7rem; /* Adjust the margin-bottom value to increase or decrease spacing */
-  }
-  
-  .project-links a {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .project-links a:hover {
-    background-color: #222;
-  }
-  
-  
-  
+}

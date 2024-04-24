@@ -6,19 +6,21 @@ const Project = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <div>
+      <div className="projects-container">
         <div className="project-card">
-          <div className="project-image">
-            <img src={realOfferImage} alt="RealOffer Project" />
-          </div>
-          <div className="project-details">
-            <h3>RealOffer</h3>
-            <p>RealOffer revolutionizes the real estate experience, offering a seamless interface for managing listings, offers, and document workflows. </p>
-            <p>Machine learning algorithms provide users with precise, data-driven pricing suggestions to inform buying and selling decisions.</p>
-            <p>Technologies: React, Node.js, Express, MongoDB, Python, scikit-learn</p>
-            <div className="project-links">
-              <a href="https://github.com/avidesai/RealOffer" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://avidesai.github.io/RealOffer/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <div className="project-content">
+            <div className="project-image">
+              <img src={realOfferImage} alt="RealOffer Project" />
+            </div>
+            <div className="project-details">
+              <h3>RealOffer</h3>
+              <p>RealOffer revolutionizes the real estate experience, offering a seamless interface for managing listings, offers, and document workflows.</p>
+              <p>Machine learning algorithms provide users with precise, data-driven pricing suggestions to inform buying and selling decisions.</p>
+              <p>Technologies: React, Node.js, Express, MongoDB, Python, scikit-learn</p>
+              <div className="project-links">
+                <a href="https://github.com/avidesai/RealOffer" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://avidesai.github.io/RealOffer/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
             </div>
           </div>
         </div>
