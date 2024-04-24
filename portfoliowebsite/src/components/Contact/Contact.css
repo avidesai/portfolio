@@ -42,7 +42,7 @@ section#contact {
     margin-top: 1.8rem;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
   
   section#contact div .contact-icons img {
@@ -59,7 +59,7 @@ section#contact {
     display: inline-block;
     background-color: #333;
     color: #fff;
-    padding: 0.6rem 1.5rem;
+    padding: 0.6rem 2rem;
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s ease;
