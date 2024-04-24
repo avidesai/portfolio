@@ -1,124 +1,132 @@
-/* Experience styles */
+/* Global Variables */
+:root {
+  --color-primary: #004BA8;  /* Deep blue for a professional look */
+  --color-secondary: #373737; /* Grey for secondary text */
+  --color-light: #EEEEEE; /* Light grey for backgrounds */
+  --color-white: #FFFFFF;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --spacing-xs: 10px;
+  --spacing-sm: 14px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/* Base Styles */
 section#experience {
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
+  font-family: var(--font-primary);
+  background-color: var(--color-light);
+  padding: var(--spacing-md) var(--spacing-md);
+  color: var(--color-secondary);
+}
+
+/* Timeline styles */
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--spacing-sm) 0;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+  padding: 1rem;
+  width: 100px; /* fixed width for better control */
+  height: 100px; /* fixed height for better control */
+  margin: 0 var(--spacing-sm); /* Add horizontal margin between items */
+}
+
+.timeline-item.active {
+  transform: translateY(-5px);
+  font-weight: bold;
+}
+
+.timeline-image {
+  width: 85px; /* Fixed width */
+  height: 85px; /* Fixed height, making it a square */
+  object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+  padding: 2px;
+  border: 1px solid white;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px var(--color-shadow);
+  transition: all var(--transition-fast);
+}
+
+.timeline-item:hover .timeline-image {
+  transform: scale(1.1);
+}
+
+.year-text {
+  margin-top: var(--spacing-xs);
+  color: var(--color-secondary);
+  font-size: 16px;
+}
+
+/* Details card */
+.experience-card {
+  display: none; /* Only show when active */
+  background-color: var(--color-white);
+  padding: var(--spacing-md) var(--spacing-lg); /* Add more padding around each list item */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px var(--color-shadow);
+  margin: var(--spacing-md) auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+.experience-card.active {
+  display: block;
+}
+
+.experience-card h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.experience-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.experience-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-sm);
+  padding: 1rem;
+}
+
+.experience-title, .experience-date {
+  margin: 0.5rem;
+}
+
+/* List styles */
+.experience-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: var(--spacing-sm);
+}
+
+.experience-card li {
+  padding-bottom: var(--spacing-xs);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .timeline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: auto;
-    margin-bottom: 0;
-    padding: 1.6rem 0;
+    justify-content: space-around;
   }
-  
+
   .timeline-item {
-    position: relative;
-    flex: 0 0 120px; /* Increased width for better spacing */
-    height: 180px; /* Increased height for year text */
-    margin: 0 20px; /* Unified margin for left and right */
-    display: flex;
-    flex-direction: column; /* Changed to column for vertical stacking */
-    align-items: center; /* Align items centrally */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    z-index: 1;
-    border-radius: 20%;
+    width: 100px; /* smaller size for mobile */
   }
-  
-  .timeline-item:hover {
-    transform: scale(1.1);
-  }
-  
-  .timeline-image {
-    width: 90px;
-    height: 90px;
-    object-fit: scale-down;
-    border-radius: 20%;
-    transition: transform 0.3s ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.128);
-  }
-  
-  .timeline-item.active .timeline-image {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .timeline-item:hover .timeline-image {
-    transform: scale(1.2);
-  }
-  
-  .year-text {
-    font-size: 0.9rem; /* Adjusted font size */
-    color: #555; /* Adjusted color */
-    margin-top: 10px; /* Space between image and year text */
-  }
-  
+
   .experience-card {
-    display: none;
-    background-color: #fff;
-    padding: 1.6rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: -0.5rem auto 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 2;
+    max-width: 95%;
+    padding: var(--spacing-sm);
   }
-  
-  .experience-card.active {
-    display: block;
-  }
-  
-  .experience-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0.5rem; /* Adjust as needed */
-  }
-  
-  .experience-card h3 a {
-    color: inherit; /* Inherits the color from the parent h3 tag */
-    text-decoration: none; /* Removes underline from the link */
-    font-weight: bold; /* Makes the text bold */
-    transition: color 0.3s ease; /* Smooth transition for color changes, if any */
-  }
-  
-  .experience-card h3 a:hover,
-  .experience-card h3 a:active,
-  .experience-card h3 a:visited {
-    color: inherit; /* Ensures the color remains consistent on hover, active and visited states */
-    text-decoration: none; /* Ensures no underline on hover, active and visited states */
-  }
-  
-  .experience-card h4 {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .experience-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 0.5rem 40px; /* Unified margin for left and right */
-  }
-  
-  .experience-title {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .experience-date {
-    font-size: 1.2rem;
-    color: #777;
-  }
-  
-  .experience-card ul {
-    list-style-type: none;
-    margin-left: 0;
-    color: #555;
-  }
-  
-  .experience-card li {
-    margin-bottom: 0.5rem;
-  }
+}

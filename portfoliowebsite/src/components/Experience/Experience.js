@@ -1,3 +1,5 @@
+// Experience.js
+
 import React, { useState } from 'react';
 import './Experience.css';
 import charm from '../../images/charm.jpeg';
@@ -23,7 +25,8 @@ const Experience = () => {
       date: 'July 2017 – August 2017',
       url: 'https://www.nasa.gov/ames',
       description: [
-        'Upgraded the GUI and functionality of Astrobee\'s ground data Java application, enhancing the efficiency of ground control operations for the autonomous free-flying robot.',
+        'Upgraded the Java-based user interface for the ISS\'s robotic assistant, Astrobee, improving user interaction and control.',
+        'Collaborated in a fast-paced Agile/Scrum team to prototype new features rapidly, achieving timely and effective software updates.',
       ],
       image: nasa,
     },
@@ -47,8 +50,7 @@ const Experience = () => {
       date: 'June 2019 – August 2019',
       url: 'https://www.uplift.com/',
       description: [
-        'Developed a sandbox website using React.js to assist travel partners with integrating Uplift’s "Buy Now Pay Later" travel financing API.',
-        'Created comprehensive documentation to onboard Uplift\'s API onto travel partners\' websites, facilitating smooth integration for Wincruise, Southwest Airlines, and AirCanada.',
+        'Constructed a full-stack web application using React.js and Node.js, integrating a MySQL database to enhance API services for travel companies, resulting in a more cohesive and efficient integration experience.',
       ],
       image: uplift,
     },
@@ -60,7 +62,7 @@ const Experience = () => {
       date: 'December 2020 – June 2021',
       url: 'https://www.charismarobotics.com/',
       description: [
-        'Implemented the A* path planning algorithm to enable efficient indoor navigation for a multi-robot system.',
+        'Implemented the A* path planning algorithm in Python for multi-robot indoor navigation, incorporating computer vision to boost localization accuracy.',
       ],
       image: charisma,
     },
@@ -68,12 +70,12 @@ const Experience = () => {
       id: 5,
       title: 'Canvas',
       location: 'San Francisco, CA',
-      position: 'Robotics Intern',
+      position: 'Robotics Software Engineering Intern',
       date: 'June 2021 – September 2021',
       url: 'https://www.canvas.build/',
       description: [
-        'Developed a coverage path planning tool with exclusion zone avoidance capabilities, resulting in a 22% reduction in labor costs for robot manipulation in complex environments.',
-        'Prototyped a computer vision tool to detect and classify errors caused by the robot, enhancing project quality and minimizing rework.',
+        'Developed a Python-based path-planning algorithm, significantly improving automation efficiency in robotic drywall finishing.',
+        'Created a computer vision system using OpenCV to detect and classify operational errors, thereby improving the quality assurance process.',
       ],
       image: canvas,
     },
@@ -85,8 +87,8 @@ const Experience = () => {
       date: 'June 2022 – September 2022',
       url: 'https://charmindustrial.com/',
       description: [
-        'Improved the usability and safety of a Python interface used to operate Charm’s biomass reactors, resulting in a 20% increase in operator efficiency.',
-        'Designed and tested a version control test suite to ensure consistency and viability of internal software updates, reducing potential errors by 15%.',
+        'Redesigned the user interface in Python for more efficient biomass reactor control, significantly enhancing system safety and user experience.',
+        'Engineered a Git-based version control test suite to validate software updates, ensuring high-quality deployments.',
       ],
       image: charm,
     },
@@ -98,8 +100,7 @@ const Experience = () => {
       date: 'September 2023 – December 2023',
       url: 'https://www.sandhyasai.com/group',
       description: [
-        'Designed and implemented a comprehensive Markov Decision Process (MDP) for an Atari game, integrating human eye position data as a heuristic.',
-        'Leveraged human feedback data to train agents, achieving gameplay that emulates human strategies and decision-making.',
+        'Devised a Python algorithm for reinforcement learning, utilizing Markov Decision Processes to model complex decision-making environments.',
       ],
       image: iras,
     },
@@ -118,7 +119,6 @@ const Experience = () => {
       <div className="timeline">
         <div className="timeline-line"></div>
         {experiences.map((experience) => (
-          
           <div
             key={experience.id}
             className={`timeline-item ${selectedExperience === experience.id ? 'active' : ''}`}
@@ -129,7 +129,7 @@ const Experience = () => {
               alt={experience.title}
               className={`timeline-image ${selectedExperience === experience.id ? 'active' : ''}`}
             />
-            <h5>{getYearFromDate(experience.date)}</h5>
+            <h5 className="year-text">{getYearFromDate(experience.date)}</h5>
           </div>
         ))}
       </div>
