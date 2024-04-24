@@ -1,5 +1,21 @@
+/* Global Variables */
+:root {
+  --color-primary: #004BA8;  /* Deep blue for a professional look */
+  --color-secondary: #373737; /* Grey for secondary text */
+  --color-light: #EEEEEE; /* Light grey for backgrounds */
+  --color-white: #FFFFFF;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --spacing-xs: 10px;
+  --spacing-sm: 14px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --transition-fast: 0.2s ease-in-out;
+}
+
 section#projects {
-  padding: 4rem 0; /* Increased padding for better spacing */
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: var(--color-light);
 }
 
 section#projects h2 {

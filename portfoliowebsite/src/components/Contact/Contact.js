@@ -19,7 +19,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="button-container">
-          <a className="resume-button" href="https://docs.google.com/document/d/1aTn2UgOyVpR1acOiXIxfiVqIVzAqHQlkk58bYZO6f-Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a className="resume-button" href="https://docs.google.com/document/d/1gdfyFdoNI6umqGu6U-4Mc7L4ezLXGb8qlnKlJf0zcic/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
     </section>

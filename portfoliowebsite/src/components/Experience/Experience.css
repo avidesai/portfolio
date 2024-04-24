@@ -16,7 +16,8 @@
 section#experience {
   font-family: var(--font-primary);
   background-color: var(--color-light);
-  padding: var(--spacing-md) var(--spacing-md);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   color: var(--color-secondary);
 }
 
@@ -25,7 +26,8 @@ section#experience {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: var(--spacing-sm) 0;
+  padding: 1rem;
+  padding-bottom: 2rem;
 }
 
 .timeline-item {
@@ -71,11 +73,14 @@ section#experience {
 .experience-card {
   display: none; /* Only show when active */
   background-color: var(--color-white);
-  padding: var(--spacing-md) var(--spacing-lg); /* Add more padding around each list item */
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 10px;
   box-shadow: 0 6px 12px var(--color-shadow);
   margin: var(--spacing-md) auto;
-  max-width: 60%;
+  max-width: 55%;
   text-align: center;
 }
 
@@ -126,7 +131,7 @@ section#experience {
   }
 
   .experience-card {
-    max-width: 95%;
+    max-width: 90%;
     padding: var(--spacing-sm);
   }
 }

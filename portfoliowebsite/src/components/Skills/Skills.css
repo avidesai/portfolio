@@ -1,7 +1,8 @@
 /* Skills styles */
 section#skills {
     text-align: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
   
   section#skills ul {
@@ -20,7 +21,7 @@ section#skills {
     background-color: #ffffffca;
     padding: 1.5rem;
     color: #555;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

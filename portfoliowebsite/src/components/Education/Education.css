@@ -1,6 +1,7 @@
 /* Education styles */
 section#education {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   
   section#education div {

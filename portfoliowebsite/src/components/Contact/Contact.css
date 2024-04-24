@@ -1,8 +1,24 @@
 /* Contact styles */
+
+/* Global Variables */
+:root {
+  --color-primary: #004BA8;  /* Deep blue for a professional look */
+  --color-secondary: #373737; /* Grey for secondary text */
+  --color-light: #EEEEEE; /* Light grey for backgrounds */
+  --color-white: #FFFFFF;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --spacing-xs: 10px;
+  --spacing-sm: 14px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --transition-fast: 0.2s ease-in-out;
+}
+
 section#contact {
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-light);
   }
   
   section#contact div p {
@@ -45,7 +61,7 @@ section#contact {
     color: #fff;
     padding: 0.6rem 1.5rem;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
     font-size: 1.1rem;
   }
