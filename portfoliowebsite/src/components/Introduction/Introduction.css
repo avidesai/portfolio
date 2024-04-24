@@ -1,12 +1,35 @@
-/* Introduction styles */
 section#about {
-    padding: 2rem 0;
-  }
-  
-  section#about p {
-    font-size: 1.2rem;
-    color: #777;
-    margin: 2rem auto;
-    max-width: 800px;
-  }
-  
+  padding: 4rem 0;
+  text-align: center; /* Center everything for a balanced look */
+  background-color: #f8f9fa; /* Light background for the section */
+  border-bottom: 1px solid #eaeaea; /* Add a subtle separation from the next section */
+}
+
+.profile-pic-container {
+  display: flex;
+  justify-content: center; /* Center the profile picture horizontally */
+  margin-bottom: 2rem; /* Space below the profile picture */
+}
+
+.profile-pic {
+  width: 175px; /* Set a fixed width for your profile picture */
+  height: 175px; /* Set a fixed height for your profile picture */
+  border-radius: 50%; /* Circular profile picture */
+  object-fit: cover; /* Cover the area without losing the aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+section#about h1 {
+  font-size: 2.5rem; /* Larger font size for the name */
+  color: #333; /* Darker font for better readability */
+  margin-top: 2.5rem;
+  margin-bottom: 3rem; /* Space below the name */
+}
+
+section#about p {
+  font-size: 1.2rem;
+  color: #555; /* Slightly darker for readability */
+  margin: 0 auto 2rem auto; /* Vertical margins for spacing, auto for horizontal centering */
+  max-width: 800px; /* Max width for optimal reading length */
+  line-height: 1.6; /* Line height for readability */
+}
