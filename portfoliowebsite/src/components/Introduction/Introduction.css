@@ -1,0 +1,12 @@
+/* Introduction styles */
+section#about {
+    padding: 2rem 0;
+  }
+  
+  section#about p {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  

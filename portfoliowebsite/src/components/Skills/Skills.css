@@ -1,0 +1,40 @@
+/* Skills styles */
+section#skills {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  section#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 15px;
+  
+  }
+  
+  section#skills li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffffca;
+    padding: 1.5rem;
+    color: #555;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+  }
+  
+  section#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  section#skills li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+  

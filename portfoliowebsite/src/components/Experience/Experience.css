@@ -1,0 +1,124 @@
+/* Experience styles */
+section#experience {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    margin-bottom: 0;
+    padding: 1.6rem 0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    flex: 0 0 120px; /* Increased width for better spacing */
+    height: 180px; /* Increased height for year text */
+    margin: 0 20px; /* Unified margin for left and right */
+    display: flex;
+    flex-direction: column; /* Changed to column for vertical stacking */
+    align-items: center; /* Align items centrally */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    border-radius: 20%;
+  }
+  
+  .timeline-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .timeline-image {
+    width: 90px;
+    height: 90px;
+    object-fit: scale-down;
+    border-radius: 20%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.128);
+  }
+  
+  .timeline-item.active .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .timeline-item:hover .timeline-image {
+    transform: scale(1.2);
+  }
+  
+  .year-text {
+    font-size: 0.9rem; /* Adjusted font size */
+    color: #555; /* Adjusted color */
+    margin-top: 10px; /* Space between image and year text */
+  }
+  
+  .experience-card {
+    display: none;
+    background-color: #fff;
+    padding: 1.6rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: -0.5rem auto 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+  }
+  
+  .experience-card.active {
+    display: block;
+  }
+  
+  .experience-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem; /* Adjust as needed */
+  }
+  
+  .experience-card h3 a {
+    color: inherit; /* Inherits the color from the parent h3 tag */
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition for color changes, if any */
+  }
+  
+  .experience-card h3 a:hover,
+  .experience-card h3 a:active,
+  .experience-card h3 a:visited {
+    color: inherit; /* Ensures the color remains consistent on hover, active and visited states */
+    text-decoration: none; /* Ensures no underline on hover, active and visited states */
+  }
+  
+  .experience-card h4 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .experience-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0.5rem 40px; /* Unified margin for left and right */
+  }
+  
+  .experience-title {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .experience-date {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  .experience-card ul {
+    list-style-type: none;
+    margin-left: 0;
+    color: #555;
+  }
+  
+  .experience-card li {
+    margin-bottom: 0.5rem;
+  }

@@ -1,9 +1,10 @@
 import React from 'react';
-import pythonImage from '../images/python.png';
-import cppImage from '../images/cpp.png';
-import reactImage from '../images/react.png';
-import nodeImage from '../images/node.png';
-import sqlImage from '../images/sql.png';
+import './Skills.css';
+import pythonImage from '../../images/python.png';
+import cppImage from '../../images/cpp.png';
+import reactImage from '../../images/react.png';
+import nodeImage from '../../images/node.png';
+import sqlImage from '../../images/sql.png';
 
 const Skills = () => {
   return (

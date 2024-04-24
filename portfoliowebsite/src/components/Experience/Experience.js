@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import charm from '../images/charm.jpeg';
-import canvas from '../images/canvas.jpeg';
-import charisma from '../images/charisma.jpg';
-import iras from '../images/iras.png';
-import uplift from '../images/uplift.png';
-import hci from '../images/hci.jpeg';
-import nasa from '../images/nasa.png';
+import './Experience.css';
+import charm from '../../images/charm.jpeg';
+import canvas from '../../images/canvas.jpeg';
+import charisma from '../../images/charisma.jpg';
+import iras from '../../images/iras.png';
+import uplift from '../../images/uplift.png';
+import hci from '../../images/hci.jpeg';
+import nasa from '../../images/nasa.png';
 
 const getYearFromDate = (dateString) => {
   const year = dateString.split(' ')[1]; // Assuming the year is always the second word
