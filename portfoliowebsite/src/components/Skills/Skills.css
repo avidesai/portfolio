@@ -1,9 +1,8 @@
 /* Skills styles */
 section#skills {
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-  }
+  text-align: center;
+  padding: 2rem 2rem 4rem; /* Top, Horizontal, Bottom */
+}
   
   section#skills ul {
     list-style: none;
@@ -18,7 +17,9 @@ section#skills {
   section#skills li {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center items horizontally */
     background-color: #ffffffca;
+    font-size: 1.05rem;
     padding: 1.5rem;
     color: #555;
     border-radius: 10px;
@@ -26,6 +27,7 @@ section#skills {
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-left: 0;
+    flex-basis: calc(25% - 20px); /* Adjusted for gap */
   }
   
   section#skills li:hover {
@@ -36,6 +38,6 @@ section#skills {
   section#skills li img {
     width: 40px;
     height: 40px;
-    margin-right: 1rem;
+    margin-right: 1.4rem;
   }
   

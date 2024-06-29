@@ -39,3 +39,19 @@ section#education {
     color: #555;
     margin-bottom: 1rem;
   }
+
+  .custom-hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(206, 206, 206); /* Light gray color */
+    width: 65%; /* Medium size width */
+    margin: 30px auto; /* Centers the line and adds space above and below */
+  }
+
+  .education-logo {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-width: 100px; /* Adjust based on your preference */
+    height: auto; /* Maintain aspect ratio */
+    padding-bottom: 10px; /* Space between the image and the text below it */
+  }

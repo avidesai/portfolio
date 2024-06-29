@@ -73,8 +73,8 @@ section#experience {
 .experience-card {
   display: none; /* Only show when active */
   background-color: var(--color-white);
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 5rem; /* Increased from 3rem */
+  padding-right: 5rem; /* Increased from 3rem */
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 10px;
@@ -117,7 +117,7 @@ section#experience {
 }
 
 .experience-card li {
-  padding-bottom: var(--spacing-xs);
+  padding-bottom: var(--spacing-md);
 }
 
 /* Responsive adjustments */

@@ -8,7 +8,7 @@ const Contact = () => {
     <section id="contact">
       <h2>Contact</h2>
       <div>
-        <p>avidesaiusa@gmail.com</p>
+        <p>avidesai.ai@gmail.com</p>
         
         <div className="contact-icons">
           <a href="https://www.linkedin.com/in/avidesai" target="_blank" rel="noopener noreferrer">
@@ -19,7 +19,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="button-container">
-          <a className="resume-button" href="https://docs.google.com/document/d/1gdfyFdoNI6umqGu6U-4Mc7L4ezLXGb8qlnKlJf0zcic/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a className="resume-button" href="https://docs.google.com/presentation/d/1xGR5ijZdePP_j4sjaQVdHJSPvPvI69pOrJuWBnrEC4A/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
     </section>

@@ -1,10 +1,13 @@
 import React from 'react';
 import './Skills.css';
 import pythonImage from '../../images/python.png';
-import cppImage from '../../images/cpp.png';
+import javascriptImage from '../../images/javascript.png';
 import reactImage from '../../images/react.png';
 import nodeImage from '../../images/node.png';
-import sqlImage from '../../images/sql.png';
+import mongodbImage from '../../images/mongodb.png';
+import pytorchImage from '../../images/pytorch.png';
+import opencvImage from '../../images/opencv.png';
+import pathplanningImage from '../../images/pathplanning.webp';
 
 const Skills = () => {
   return (
@@ -16,21 +19,34 @@ const Skills = () => {
           Python
         </li>
         <li>
-          <img src={cppImage} alt="C++" />
-          C++
+          <img src={javascriptImage} alt="JavaScript" />
+          JavaScript
         </li>
         <li>
           <img src={reactImage} alt="React" />
-          React
+          React.js
         </li>
         <li>
           <img src={nodeImage} alt="Node.js" />
           Node.js
         </li>
         <li>
-          <img src={sqlImage} alt="SQL" />
-          SQL
+          <img src={mongodbImage} alt="MongoDB" />
+          MongoDB
         </li>
+        <li>
+          <img src={pytorchImage} alt="PyTorch" />
+          PyTorch
+        </li>
+        <li>
+          <img src={pathplanningImage} alt="Path Planning" />
+          Path Planning
+        </li>
+        <li>
+          <img src={opencvImage} alt="Computer Vision" />
+          Computer Vision
+        </li>
+        
       </ul>
     </section>
   );
