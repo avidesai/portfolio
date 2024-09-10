@@ -31,7 +31,7 @@ const Project = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
 
-  const { title, description, technologies, image, githubLink, liveDemoLink } = projects[currentIndex];
+  const { title, description, technologies, image, liveDemoLink } = projects[currentIndex];
 
   return (
     <section id="projects">
