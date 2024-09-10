@@ -9,8 +9,7 @@ const projects = [
     description: 'RealOffer revolutionizes the real estate experience, offering a seamless interface for managing listings, offers, and document workflows. A machine learning algorithm provides users with precise, data-driven pricing suggestions to inform buying and selling decisions.',
     technologies: 'React, Node.js, Express, MongoDB, Python, scikit-learn',
     image: realOfferImage,
-    githubLink: 'https://github.com/avidesai/RealOffer',
-    liveDemoLink: 'https://avidesai.github.io/RealOffer/'
+    liveDemoLink: 'https://www.realoffer.io/',
   },
   {
     title: 'CashFlow.io',
@@ -51,7 +50,6 @@ const Project = () => {
                 <p>{description}</p>
                 <p>Technologies: {technologies}</p>
                 <div className="project-links">
-                  <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
                   <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
                 </div>
               </div>
