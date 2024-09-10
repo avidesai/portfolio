@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import './Project.css';
 import realOfferImage from '../../images/realOffer.png';
-import cashFlowImage from '../../images/CashFlowIO.png';
+import cashFlowImage from '../../images/CapRateIO.png';
 
 const projects = [
   {
-    title: 'RealOffer',
+    title: 'RealOffer.io',
     description: 'RealOffer revolutionizes the real estate experience, offering a seamless interface for managing listings, offers, and document workflows. A machine learning algorithm provides users with precise, data-driven pricing suggestions to inform buying and selling decisions.',
     technologies: 'React, Node.js, Express, MongoDB, Python, scikit-learn',
     image: realOfferImage,
     liveDemoLink: 'https://www.realoffer.io/',
   },
   {
-    title: 'CashFlow.io',
-    description: 'CashFlow.io is a rental property cash flow analysis tool designed for investors. It simplifies the process of calculating potential cash flow, capitalization rates, and return on investment for rental properties. CashFlow.io offers users insightful and accurate financial analysis, empowering users to make informed investment decisions.',
+    title: 'CapRate.io',
+    description: 'CapRate.io is a rental property cash flow analysis tool designed for investors. It simplifies the process of calculating potential cash flow, capitalization rates, and return on investment for rental properties. CapRate.io offers users insightful and accurate financial analysis, empowering users to make informed investment decisions.',
     technologies: 'React, Node.js, Express, MongoDB',
     image: cashFlowImage,
-    githubLink: 'https://github.com/avidesai/RealAnalysis',
-    liveDemoLink: 'https://avidesai.github.io/RealAnalysis/'
+    liveDemoLink: 'https://caprateio.vercel.app/'
     },
 ];
 
